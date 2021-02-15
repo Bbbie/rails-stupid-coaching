@@ -4,23 +4,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$blue: #337AB7;
+$blue: #005dff;
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
 }
 
-h1 {
-  font-weight: 400;
+.container {
+  width: 500px;
+  margin: 0 auto;
 }
 
-.form {
-  width: 600px;
+form {
+  width: 100%;
   display: inline-flex;
 }
 
+input[type=text] {
+  flex-grow: 1;
+  &:active {
+    border-radius: 8px;
+    border: 1px solid #0045bc;
+    transition: all 0.3s;
+  }
+}
+
 .text-input {
-  width: 100%;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 0px;
@@ -39,22 +49,28 @@ h1 {
   border-top-left-radius: 0px;
   background-color: $blue;
   border: 1px solid $blue;
-  &:hover {
-    background-color: #255e8c;
-    border: 1px solid #255e8c;
+  &:focus {
+    background-color: #0045bc;
+    border: 1px solid #0045bc;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 0px;
     transition: all 0.3s;
   }
 }
 
 .card {
   background-color: white;
+  border-radius: 8px;
   padding: 10px 16px;
   margin-bottom: 20px;
-  border-left: 6px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card.answer {
-  background-color: #FEFFE1;
+.answer {
+  border: 2px solid $blue;
+  box-shadow: 0px 4px 20px rgba(0, 97, 255, 0.4);
 }
 
 a {
