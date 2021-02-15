@@ -1,0 +1,63 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$blue: #337AB7;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.form {
+  width: 600px;
+  display: inline-flex;
+}
+
+.text-input {
+  width: 100%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 0;
+}
+
+.button {
+  font-size: 20px;
+  color: white;
+  padding: 12px 16px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 0px;
+  background-color: $blue;
+  border: 1px solid $blue;
+  &:hover {
+    background-color: #255e8c;
+    border: 1px solid #255e8c;
+    transition: all 0.3s;
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border-left: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+.card.answer {
+  background-color: #FEFFE1;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
